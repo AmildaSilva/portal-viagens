@@ -19,6 +19,34 @@
   font-size: 1.1rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.detailImage {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.detailImage img {
+  object-fit: cover;
+}
+
+
+
+
 @media (max-width: 768px) {
  .detailGrid {
     grid-template-columns: 1fr;
